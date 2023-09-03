@@ -13,7 +13,7 @@ Module SayMyName
     Sub Main()
         'TODO
         '[~]Prompt user for a number and reflect back thier input
-        '[]Prompt user for a second number and reflect back both thier inputs
+        '[~]Prompt user for a second number and reflect back both thier inputs
         '[]Ask user if they would like to multiply or divide thier input
         '[]Return computated value
 
@@ -21,7 +21,7 @@ Module SayMyName
         Dim userInput As String
         Dim numberOne As Integer
         Dim numberTwo As Integer
-        'Dim operator As String
+        'Dim operation As String
 
         'First Number Aquisition
         Console.WriteLine("Please enter a number.")
@@ -37,6 +37,20 @@ Module SayMyName
         '*****WILL CRASH HERE IF INVALID CONVERSION********
         numberTwo = CInt(userInput)
 
+        'Prompt, Compute, and Return
+        Console.WriteLine("Would you like to add or multiply these two numbers?" & vbLf & "Please enter '+' or '*'")
+        userInput = Console.ReadLine()
+
+        If (userInput = "+") Then
+            'Add
+            Console.WriteLine("Add")
+        ElseIf (UserInput = "*") Then
+            'Multiply
+            Console.WriteLine("Multiply")
+        Else
+            'I dont know how to do that kind of math
+            Console.WriteLine("I don't know that kind of math.")
+        End If
         Console.Read()
 
     End Sub
