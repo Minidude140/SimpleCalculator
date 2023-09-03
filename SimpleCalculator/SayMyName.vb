@@ -20,15 +20,22 @@ Module SayMyName
 
         Dim userInput As String
         Dim numberOne As Integer
-        'Dim numberTwo As Integer
+        Dim numberTwo As Integer
         'Dim operator As String
 
-        'First Number aquisition
+        'First Number Aquisition
         Console.WriteLine("Please enter a number.")
         userInput = Console.ReadLine()
         Console.WriteLine($"You have entered {userInput}.")
         '*****WILL CRASH HERE IF INVALID CONVERSION********
         numberOne = CInt(userInput)
+
+        'Second Number Aquistion
+        Console.WriteLine("Please enter a second number.")
+        userInput = Console.ReadLine()
+        Console.WriteLine($"You have entered {numberOne} and {userInput}.")
+        '*****WILL CRASH HERE IF INVALID CONVERSION********
+        numberTwo = CInt(userInput)
 
         Console.Read()
 
