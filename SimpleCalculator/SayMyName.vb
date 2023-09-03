@@ -50,7 +50,7 @@ Module SayMyName
             'Multiply
             Console.WriteLine($"{numberOne} * {numberTwo} = {numberOne * numberTwo}" & vbLf)
         Else
-            'not multiply or divide
+            'not multiply or add
             Console.WriteLine($"{numberOne} {userInput} {numberTwo} = ???" & vbLf & "I don't know that kind of math." & vbLf)
         End If
 
