@@ -14,14 +14,13 @@ Module SayMyName
         'TODO
         '[~]Prompt user for a number and reflect back thier input
         '[~]Prompt user for a second number and reflect back both thier inputs
-        '[]Ask user if they would like to multiply or divide thier input
-        '[]Return computated value
-
+        '[~]Ask user if they would like to multiply or divide thier input
+        '[~]Return computated value
+        '[~]Prompt to exit program
 
         Dim userInput As String
         Dim numberOne As Integer
         Dim numberTwo As Integer
-        'Dim operation As String
 
         'First Number Aquisition
         Console.WriteLine("Please enter a number.")
@@ -41,6 +40,7 @@ Module SayMyName
         Console.WriteLine("Would you like to add or multiply these two numbers?" & vbLf & "Please enter '+' or '*'")
         userInput = Console.ReadLine()
 
+        'Determine Desired Operation
         If (userInput = "+") Then
             'Add
             Console.WriteLine($"{numberOne} + {numberTwo} = {numberOne + numberTwo}")
