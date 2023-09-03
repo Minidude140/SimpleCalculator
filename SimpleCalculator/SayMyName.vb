@@ -43,14 +43,17 @@ Module SayMyName
 
         If (userInput = "+") Then
             'Add
-            Console.WriteLine("Add")
+            Console.WriteLine($"{numberOne} + {numberTwo} = {numberOne + numberTwo}")
         ElseIf (UserInput = "*") Then
             'Multiply
-            Console.WriteLine("Multiply")
+            Console.WriteLine($"{numberOne} * {numberTwo} = {numberOne * numberTwo}")
         Else
-            'I dont know how to do that kind of math
-            Console.WriteLine("I don't know that kind of math.")
+            'not multiply or divide
+            Console.WriteLine($"{numberOne} {userInput} {numberTwo} = ???" & vbLf & "I don't know that kind of math.")
         End If
+
+        'End greeting and exit
+        Console.WriteLine("Too much math for me, have a good day." & vbLf & "(Please press enter to exit)")
         Console.Read()
 
     End Sub
