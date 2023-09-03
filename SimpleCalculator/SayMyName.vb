@@ -2,7 +2,7 @@
 'RCET 2265
 'Fall 2023
 'Simple Calculator
-'https://github.com/Minidude140
+'https://github.com/Minidude140/SimpleCalculator.git
 
 
 Option Explicit On
@@ -11,6 +11,17 @@ Option Strict On
 Module SayMyName
 
     Sub Main()
+        'TODO
+        'Prompt user for a number and reflect back thier input
+        'Prompt user for a second number and reflect back both thier inputs
+        'Ask user if they would like to multiply or divide thier input
+        'Return computated value
+
+
+        Dim userInput As String
+        Dim numberOne As Integer
+        Dim numberTwo As Integer
+        Dim operator As String
 
     End Sub
 
